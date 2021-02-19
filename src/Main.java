@@ -10,9 +10,13 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String args[]) throws IOException {
+
+        //MemberList 생성자 선언부
         MemberList memberList = new MemberList();
+
+
         ArrayList<String> temp;
-        FileInputStream fis=new FileInputStream("C:\\Users\\User\\Desktop\\example.xlsx");
+        FileInputStream fis=new FileInputStream("example.xlsx");
         XSSFWorkbook workbook= new XSSFWorkbook(fis);;
         int rowindex=0;
         int columnindex=0;
@@ -62,7 +66,7 @@ public class Main {
             FileWriter writer = null;
                 try {
                     // 기존 파일의 내용에 이어서 쓰려면 true를, 기존 내용을 없애고 새로 쓰려면 false를 지정한다.
-                    writer = new FileWriter(file, true);
+                    writer = new FileWriter(file, false);
                     writer.write(message);
                     writer.flush();
 

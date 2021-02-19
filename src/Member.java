@@ -14,16 +14,17 @@ public class Member {
         this.intr=str.get(9);
     }
 
-    private String nick; //닉네임
-    private String mbti; //mbti
-    private String age; //나이
-    private String sch; //학교
-    private String maj; //학과
-    private String hgh; //키
-    private String chr; //성격
-    private String sty; //스타일
-    private String hob; //취미
-    private String intr; //자기소개
+    //필드 선언 및 초기화
+    private String nick="내용 없음"; //닉네임
+    private String mbti="내용 없음"; //mbti
+    private String age="내용 없음"; //나이
+    private String sch="내용 없음"; //학교
+    private String maj="내용 없음";; //학과
+    private String hgh="내용 없음";; //키
+    private String chr="내용 없음";; //성격
+    private String sty="내용 없음";; //스타일
+    private String hob="내용 없음";; //취미
+    private String intr="내용 없음";; //자기소개
 
     String getNick(){
         return nick;
